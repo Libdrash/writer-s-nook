@@ -1,0 +1,47 @@
+import { defineComponent, h } from "vue";
+
+export const EyeOffIcon = defineComponent({
+  name: "EyeOffIcon",
+  props: {
+    width: { type: Number, default: 24 },
+    height: { type: Number, default: 24 },
+    color: { type: String, default: "#212529" },
+    strokeWidth: { type: Number, default: 2 },
+  },
+  setup(props) {
+    return () =>
+      h(
+        "svg",
+        {
+          viewBox: "0 0 24 24",
+          width: props.width,
+          height: props.height,
+          fill: "none",
+          xmlns: "http://www.w3.org/2000/svg",
+        },
+        [
+          h("path", {
+            d: "M2.06251 12.3479C1.97916 12.1234 1.97916 11.8764 2.06251 11.6519C2.87421 9.68373 4.25202 8.00091 6.02128 6.81677C7.79053 5.63263 9.87155 5.00049 12.0005 5.00049C14.1295 5.00049 16.2105 5.63263 17.9797 6.81677C19.749 8.00091 21.1268 9.68373 21.9385 11.6519C22.0218 11.8764 22.0218 12.1234 21.9385 12.3479C21.1268 14.316 19.749 15.9988 17.9797 17.183C16.2105 18.3671 14.1295 18.9993 12.0005 18.9993C9.87155 18.9993 7.79053 18.3671 6.02128 17.183C4.25202 15.9988 2.87421 14.316 2.06251 12.3479Z",
+            stroke: props.color,
+            "stroke-width": props.strokeWidth.toString(),
+            "stroke-linecap": "round",
+            "stroke-linejoin": "round",
+          }),
+          h("path", {
+            d: "M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z",
+            stroke: props.color,
+            "stroke-width": props.strokeWidth.toString(),
+            "stroke-linecap": "round",
+            "stroke-linejoin": "round",
+          }),
+          h("path", {
+            d: "M3 3L21 21",
+            stroke: props.color,
+            "stroke-width": props.strokeWidth.toString(),
+            "stroke-linecap": "round",
+            "stroke-linejoin": "round",
+          }),
+        ],
+      );
+  },
+});
