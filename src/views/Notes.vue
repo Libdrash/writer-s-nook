@@ -95,7 +95,7 @@
       </div>
       <div v-else class="flex-center flex-col">
         <h3 class="nothing">Нет книг с заметками</h3>
-        <router-link to="/books" class="button"> Добавить книгу </router-link>
+        <router-link to="/library" class="button">Добавить книгу</router-link>
       </div>
     </template>
   </div>

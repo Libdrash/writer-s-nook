@@ -8,7 +8,7 @@
     "
   >
     <h4>Книги не найдены, попробуйте</h4>
-    <router-link to="/books"><h4>создать книгу</h4></router-link>
+    <router-link to="/library"><h4>создать книгу</h4></router-link>
   </div>
 
   <app-loader
