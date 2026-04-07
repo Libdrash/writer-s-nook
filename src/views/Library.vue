@@ -11,7 +11,7 @@
       <BookCard v-for="book in books" :key="book.id" :book="book" />
     </div>
     <div v-else-if="!isFetchingBooks && !books?.length" class="flex-center">
-      Ничего не найдено
+      <h3 class="nothing">Ничего не найдено</h3>
     </div>
   </div>
 </template>

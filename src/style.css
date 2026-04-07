@@ -1413,3 +1413,9 @@ body {
   max-height: fit-content;
   padding: 4px;
 }
+
+.nothing {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
